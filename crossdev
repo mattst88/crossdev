@@ -1808,7 +1808,7 @@ do_emerge() {
 # gcc wanting updated mpfr/gmp).  Don't use --oneshot anymore to
 # follow normal emerge behavior; people can pass the -1 to portage
 # themselves if they want that.
-EOPTS_DEF="--buildpkg=n ${UOPTS}"
+EOPTS_DEF="${UOPTS}"
 EOPTS_UP="${EOPTS_DEF} -u"
 EOPTS=${EOPTS_UP}
 # keep things like --ask from screwing us up
